@@ -1,0 +1,57 @@
+.task-Container {
+  width: 80%;
+  height: 80%;
+  list-style-type: none;
+  padding: 10px;
+  border: 1px solid hotpink;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  & li {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid hotpink;
+    display: flex;
+    padding: 10px;
+    color: black;
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Open Sans",
+      "Helvetica Neue",
+      sans-serif;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    button {
+      height: 40px;
+      width: 70px;
+      cursor: pointer;
+      background-color: hotpink;
+      border: none;
+      border-radius: 10px;
+      transition: 0.3s;
+      animation: btn infinite 10s linear;
+    }
+
+    button:hover {
+      box-shadow: 4px 8px 16px red;
+    }
+  }
+  & li:hover {
+    box-shadow: 0px 8px 16px gray;
+  }
+}

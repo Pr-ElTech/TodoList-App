@@ -1,0 +1,27 @@
+button {
+  height: 50px;
+  width: 70px;
+  cursor: pointer;
+  background-color: hotpink;
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+button:hover {
+  box-shadow: 4px 8px 16px gray;
+
+  @media (max-width: 1000px) {
+    button {
+      height: 50px;
+      width: 70px;
+      cursor: pointer;
+      background-color: hotpink;
+      border: none;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+    button:hover {
+      box-shadow: 4px 8px 16px gray;
+    }
+  }
+}

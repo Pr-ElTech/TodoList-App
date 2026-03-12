@@ -1,0 +1,291 @@
+main {
+  height: 100vh;
+  width: 100%;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+  justify-content: center;
+
+  & .inputHolder {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: main infinite 3s linear;
+
+    h1 {
+      color: black;
+      span {
+        color: hotpink;
+      }
+    }
+
+    & .inputs {
+      height: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      & input {
+        width: 450px;
+        height: 50px;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+      }
+      & input:focus {
+        outline: none;
+        border: 1px solid hotpink;
+      }
+      button {
+        height: 50px;
+        width: 70px;
+        cursor: pointer;
+        background-color: hotpink;
+        border: none;
+        border-radius: 10px;
+        animation: AddBtn infinite 3s linear;
+        transition: 0.3s;
+      }
+      button:hover {
+        box-shadow: 4px 8px 16px gray;
+      }
+    }
+  }
+
+  ul {
+    width: 80%;
+    height: 80%;
+    list-style-type: none;
+    padding: 10px;
+    border: 1px solid hotpink;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    & li {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid hotpink;
+      display: flex;
+      padding: 10px;
+      color: black;
+      font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+      font-weight: bold;
+      align-items: center;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+
+      button {
+        height: 40px;
+        width: 70px;
+        cursor: pointer;
+        background-color: hotpink;
+        border: none;
+        border-radius: 10px;
+        transition: 0.3s;
+        animation: btn infinite 10s linear;
+      }
+
+      button:hover {
+        box-shadow: 4px 8px 16px red;
+      }
+    }
+    & li:hover {
+      box-shadow: 0px 8px 16px gray;
+    }
+  }
+}
+
+/* Inside your & li selector */
+.button_holder {
+  border: 1px solid hotpink;
+  padding: 2px 10px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px; /* Match your button shape */
+  display: flex;
+  gap: 5px;
+  animation: shimmer 3s infinite linear;
+}
+
+/* @keyframes shimmer {
+  from {
+    opacity: 0;
+    transform: translateX(400px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+@media (max-width: 1000px) {
+  main {
+    height: 100vh;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+
+    & .inputHolder {
+      width: 100%;
+      height: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      h1 {
+        color: black;
+        span {
+          color: hotpink;
+        }
+      }
+
+      & .inputs {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        & input {
+          width: 250px;
+          height: 50px;
+          padding: 10px;
+          border: none;
+          border-radius: 10px;
+        }
+        & input:focus {
+          outline: none;
+          width: 250px;
+          height: 50px;
+          padding: 10px;
+          border: 1px solid hotpink;
+          border-radius: 10px;
+        }
+        button {
+          height: 50px;
+          width: 70px;
+          cursor: pointer;
+          background-color: hotpink;
+          border: none;
+          border-radius: 10px;
+          transition: 0.3s;
+        }
+        button:hover {
+          box-shadow: 4px 8px 16px gray;
+        }
+      }
+    }
+
+    ul {
+      width: 100%;
+      height: 80%;
+      list-style-type: none;
+      padding: 5px;
+      border: 1px solid hotpink;
+
+      & li {
+        width: 100%;
+        height: 50px;
+        border: 1px solid hotpink;
+        display: flex;
+        color: black;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Oxygen,
+          Ubuntu,
+          Cantarell,
+          "Open Sans",
+          "Helvetica Neue",
+          sans-serif;
+        font-weight: bold;
+        align-items: center;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+
+        button {
+          height: 40px;
+          width: 70px;
+          cursor: pointer;
+          background-color: hotpink;
+          border: none;
+          border-radius: 10px;
+          transition: 0.3s;
+        }
+        button:hover {
+          box-shadow: 4px 8px 16px red;
+        }
+      }
+      & li:hover {
+        box-shadow: 0px 8px 16px gray;
+      }
+    }
+  }
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite forwards 20s linear;
+  }
+}
+/* @keyframes btn {
+  from {
+    opacity: 0;
+    transform: matrix3d(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: matrix3d(50);
+  }
+}
+@keyframes AddBtn {
+  from {
+    opacity: 0;
+    transform: rotateX("angle");
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX("angle");
+  }
+}
+@keyframes main {
+  from {
+    opacity: 0;
+    transform: skewX(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: skewX(100px);
+  }
+} */

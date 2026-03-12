@@ -1,0 +1,10 @@
+header {
+  width: 100%;
+  height: max-content;
+  h1 {
+    color: black;
+    span {
+      color: hotpink;
+    }
+  }
+}

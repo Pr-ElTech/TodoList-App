@@ -1,0 +1,29 @@
+.inputHolder {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: main infinite 3s linear;
+
+  & .inputs {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    & input {
+      width: 450px;
+      height: 50px;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+    }
+    & input:focus {
+      outline: none;
+      border: 1px solid hotpink;
+    }
+  }
+}
