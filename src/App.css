@@ -6,6 +6,7 @@ main {
   flex-direction: column;
   padding: 10px;
   gap: 10px;
+  align-items: center;
   justify-content: center;
 
   & .inputHolder {
@@ -113,6 +114,17 @@ main {
     }
     & li:hover {
       box-shadow: 0px 8px 16px gray;
+    }
+
+    input {
+      width: 200px;
+      height: 20px;
+      border: 10px;
+      padding: 10px;
+    }
+
+    input:focus {
+      outline: none;
     }
   }
 }
