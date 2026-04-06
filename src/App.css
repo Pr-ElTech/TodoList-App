@@ -101,7 +101,7 @@ main {
         height: 40px;
         width: 70px;
         cursor: pointer;
-        background-color: hotpink;
+        background: linear-gradient(red, hotpink);
         border: none;
         border-radius: 10px;
         transition: 0.3s;
