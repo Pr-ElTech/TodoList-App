@@ -179,12 +179,14 @@
 import React from "react";
 import List from "./Components/List";
 import { Toaster } from "react-hot-toast";
+import TodoAsync from "./Components/APP/TodoAsync";
 
 const App = () => {
   return (
     <div>
       <Toaster position="top-center" reverseOrder={false} />
-      <List />
+      {/* <List /> */}
+      <TodoAsync />
     </div>
   );
 };
